@@ -1,0 +1,3834 @@
+[
+  {
+    "video_id": "tRA0D4nh-fU",
+    "title": "Haben wir eine Chance?! Boulder Bundesliga 2025  vs PowerBoulder!",
+    "published_at": "2026-02-14T17:01:24Z",
+    "view_count": 396,
+    "like_count": 27,
+    "comment_count": 25,
+    "participants": [
+      "Tasso",
+      "Moritz",
+      "Pedro"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Tasso": "Flash",
+          "Moritz": "Flash",
+          "Pedro": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Tasso": "Top",
+          "Moritz": "Flash",
+          "Pedro": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Tasso": "Top",
+          "Moritz": "Top",
+          "Pedro": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Tasso": "Top",
+          "Moritz": "Top",
+          "Pedro": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Pedro": "Top"
+        }
+      }
+    ],
+    "location": {
+      "gym": "Block Helden Erlangen",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "Ak-aot8r3v8",
+    "title": "Brutale E4 Boulder Session - Schaffen WIR die Top´s ? Boulder-Vlog 87",
+    "published_at": "2026-02-07T17:00:12Z",
+    "view_count": 619,
+    "like_count": 28,
+    "comment_count": 21,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Pedro"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Pedro": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Top",
+          "Pedro": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Top",
+          "Pedro": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "S88X9RYr_HU",
+    "title": "Entsptannte Runde? Wir wollten nur bouldern… dann ist DAS passiert ‍️",
+    "published_at": "2026-01-31T17:00:46Z",
+    "view_count": 4011,
+    "like_count": 22,
+    "comment_count": 13,
+    "participants": [
+      "Tasso",
+      "Andre"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "5OpQetm1gN4",
+    "title": "Bouldern in Zirndorf  - ist es komplett SCHIEFGEANGEN ?‍️",
+    "published_at": "2026-01-24T17:00:07Z",
+    "view_count": 4089,
+    "like_count": 30,
+    "comment_count": 22,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Pedro"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Lila",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Pedro": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Pedro": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Pedro": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Pedro": "Top"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "vPlzqtgQSQc",
+    "title": "BACK am KILTERBOARD! Wer PERFORMT und wer VERLIERT?",
+    "published_at": "2026-01-17T17:01:25Z",
+    "view_count": 785,
+    "like_count": 23,
+    "comment_count": 15,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "Kilterboard",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "7TBn3gTPNGQ",
+    "title": "Brutale Wände & Emotionen: Erste Boulder-Session 2026! (Episode 83)",
+    "published_at": "2026-01-10T17:00:09Z",
+    "view_count": 2869,
+    "like_count": 34,
+    "comment_count": 22,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Top",
+          "Andre": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "hT0wdfNzqXY",
+    "title": "Erste Folge 2026  Bouldern im World’s Biggest Climbing Gym!",
+    "published_at": "2026-01-03T17:01:13Z",
+    "view_count": 523,
+    "like_count": 33,
+    "comment_count": 13,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "Block Helden Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "jdF5G9GvjOQ",
+    "title": "DIE LETZTE EPISODE?! Finale im Steinbock Erlangen, wer wird gewinnen ?",
+    "published_at": "2025-12-27T17:01:14Z",
+    "view_count": 395,
+    "like_count": 28,
+    "comment_count": 17,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "HP182h34jtw",
+    "title": "4 Freunde, eine Halle – Bouldern im CafeKraft!  (Vlog 80)",
+    "published_at": "2025-12-20T17:00:28Z",
+    "view_count": 507,
+    "like_count": 29,
+    "comment_count": 21,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Orange",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Top"
+        }
+      }
+    ],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "Aj5cDR-jjvI",
+    "title": "3 BOULDER - 5 Athleten - Wer zerbricht zuerst?! PowerBoulder im E4! (EP. 79)",
+    "published_at": "2025-12-13T17:00:16Z",
+    "view_count": 846,
+    "like_count": 30,
+    "comment_count": 17,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "WrB1SUCx02c",
+    "title": "Wir dachten, das wäre leicht... Schaffen WIR das?",
+    "published_at": "2025-12-06T17:00:53Z",
+    "view_count": 1360,
+    "like_count": 32,
+    "comment_count": 18,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Moritz"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Top"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "JkXshTZnTH0",
+    "title": "Er ist ZURÜCK?! Wird er ein Comeback schaffen ? Bouldern mit der CREW!",
+    "published_at": "2025-11-29T17:00:26Z",
+    "view_count": 2414,
+    "like_count": 38,
+    "comment_count": 17,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Moritz": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Moritz": "Top",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Pink",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Top",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "t4LvAuNonVU",
+    "title": "BOULDERHALLE bricht uns... PowerBoulder gehen CRASHOUT!",
+    "published_at": "2025-11-22T17:01:33Z",
+    "view_count": 5229,
+    "like_count": 32,
+    "comment_count": 16,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Koray": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Purple",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Flash",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "uMzGwhZDJLk",
+    "title": "V2 in my GYM BRO -  FIRST TIME KILTER Board",
+    "published_at": "2025-11-15T17:01:35Z",
+    "view_count": 4182,
+    "like_count": 32,
+    "comment_count": 24,
+    "participants": [
+      "Tasso",
+      "Seiko"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "vYky_5mD4Cg",
+    "title": "Die ABSOLUTE ÜBERRASCHUNG: Was noch NIE passiert ist! PowerBoulder im E4",
+    "published_at": "2025-11-08T17:01:36Z",
+    "view_count": 9183,
+    "like_count": 34,
+    "comment_count": 19,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Top",
+          "Andre": "Flash",
+          "Seiko": "Top",
+          "Koray": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "eqDgdq9f4Cg",
+    "title": "ABSOLUT KRANK!  Halloween BOULDER-WAHNSINN! EXTREME Challenges & KOSTÜME!",
+    "published_at": "2025-11-01T19:04:48Z",
+    "view_count": 4276,
+    "like_count": 20,
+    "comment_count": 12,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Koray"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "_GscJstiClw",
+    "title": "4 POWERBOULDER VS. STEINBOCK ERLANGEN! Wir knacken die 6er ?",
+    "published_at": "2025-10-25T16:01:04Z",
+    "view_count": 6391,
+    "like_count": 31,
+    "comment_count": 22,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Pink",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Fail",
+          "Seiko": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "eHL3E0RiXaE",
+    "title": "BACK in TOWN - Erste Session nach dem Boulder EVENT !",
+    "published_at": "2025-10-18T16:01:05Z",
+    "view_count": 5451,
+    "like_count": 27,
+    "comment_count": 25,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "Ouxs91DMZGc",
+    "title": "Wir besuchen das GRÖSSTE Boulder Event Deutschlands - Part 2",
+    "published_at": "2025-10-13T16:00:43Z",
+    "view_count": 3676,
+    "like_count": 37,
+    "comment_count": 22,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Moritz"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "urban apes Fhain Berlin",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "2Z2Wks5XphI",
+    "title": "Bayern trifft Berlin – wir testen die krasseste Boulderhallen Urban Apes! PART 1",
+    "published_at": "2025-10-11T10:00:06Z",
+    "view_count": 4079,
+    "like_count": 32,
+    "comment_count": 22,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Moritz"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "urban apes Fhain Berlin",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "PRrcposHisI",
+    "title": "Kaum zu glauben: From Impossible to Possible  | Boulder-Session Episode 71",
+    "published_at": "2025-10-04T10:00:42Z",
+    "view_count": 942,
+    "like_count": 27,
+    "comment_count": 19,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Moritz": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "Wq92tw21K6k",
+    "title": "Final Round ! Woche 4 Bouldering Competition – Epic Climbing Highlights",
+    "published_at": "2025-09-27T10:00:46Z",
+    "view_count": 894,
+    "like_count": 26,
+    "comment_count": 26,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Flash",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Flash",
+          "Moritz": "Flash",
+          "Koray": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "White",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "tw29CdSDc1s",
+    "title": "Unleashing my inner Steinbock  – Get High Week 3 in Erlangen!",
+    "published_at": "2025-09-20T10:01:29Z",
+    "view_count": 327,
+    "like_count": 25,
+    "comment_count": 9,
+    "participants": [
+      "Tasso",
+      "Andre"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "IOYl1AM4x-0",
+    "title": "Boulder-Training im Cafe Kraft mit den PowerBoulder!  Chaos-Episode 68",
+    "published_at": "2025-09-15T16:00:26Z",
+    "view_count": 1357,
+    "like_count": 37,
+    "comment_count": 14,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Moritz"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "-pO-zkRIw0Q",
+    "title": "GET HIGH – Week 1 startet wild im Steinbock!",
+    "published_at": "2025-09-06T09:00:00Z",
+    "view_count": 1500,
+    "like_count": 25,
+    "comment_count": 13,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Moritz"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "lZ4aX7zyjSI",
+    "title": "Climbing Adventure  Boulder Training in der geheimen Halle?!",
+    "published_at": "2025-08-30T09:01:08Z",
+    "view_count": 385,
+    "like_count": 31,
+    "comment_count": 17,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Koray"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "Boulderia GmbH",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "MpS_M83vnQw",
+    "title": "Climber Adventure | Steinbock Boulder Gym – Kann ich mithalten?",
+    "published_at": "2025-08-23T09:00:26Z",
+    "view_count": 806,
+    "like_count": 41,
+    "comment_count": 27,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Moritz": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": null,
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Fail",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "_L7CXNLDaVs",
+    "title": "Anfänger vs PowerBoulder – Wer gewinnt das Boulder-Chaos?  | Episode 64 im E4",
+    "published_at": "2025-08-16T09:00:48Z",
+    "view_count": 1219,
+    "like_count": 39,
+    "comment_count": 18,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Moritz"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Top"
+        }
+      },
+      {
+        "difficulty": "4",
+        "color": "Orange",
+        "performances": {
+          "Tasso": "Flash",
+          "Andre": "Top",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Orange",
+        "performances": {
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Orange",
+        "performances": {
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "HxDwiET6hPc",
+    "title": "Wer wird Boulder-Champion?  Kampf um Platz 1 im Steinbock Zirndorf",
+    "published_at": "2025-08-09T09:00:29Z",
+    "view_count": 564,
+    "like_count": 28,
+    "comment_count": 15,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Purple",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Seiko": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Seiko": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "fzBSnlfspYI",
+    "title": "Get High x Steinbock: Comeback, Kampfgeist & ein Team am Limit!",
+    "published_at": "2025-08-02T09:00:56Z",
+    "view_count": 1152,
+    "like_count": 32,
+    "comment_count": 23,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Rosa",
+        "performances": {
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Moritz": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Tasso": "Flash",
+          "Andre": "Top",
+          "Moritz": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Moritz": "Flash",
+          "Seiko": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "i34FXbouiZ0",
+    "title": "Vollgas bei GET HIGH! Café Kraft wird zum Limit-Test!",
+    "published_at": "2025-07-26T09:00:57Z",
+    "view_count": 755,
+    "like_count": 31,
+    "comment_count": 20,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Rosa",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "YbyUay4H4gQ",
+    "title": "Back in Bavaria – Climbing, Fails & Comeback! GET HIGH x Steinbock Nürnberg",
+    "published_at": "2025-07-19T09:45:06Z",
+    "view_count": 573,
+    "like_count": 26,
+    "comment_count": 26,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Seiko": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Top",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "0-ECuG8FJeU",
+    "title": "Bouldern im gemütlichsten Gym ever – mitten auf einer Insel in Japan!",
+    "published_at": "2025-07-12T09:45:00Z",
+    "view_count": 227,
+    "like_count": 20,
+    "comment_count": 12,
+    "participants": [
+      "Tasso",
+      "Symeon"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Japan"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "LpOQNEqD1CM",
+    "title": "B-Pump Ogikubo – Das härteste Boulder-Gym der Welt!? 🇯🇵 Wir testen es als Amateure!",
+    "published_at": "2025-07-05T09:45:01Z",
+    "view_count": 449,
+    "like_count": 28,
+    "comment_count": 14,
+    "participants": [
+      "Tasso",
+      "Symeon"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Japan"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "DSrff_MxV5U",
+    "title": "Bouldering in Tokyo 🇯🇵 | Unser Epic Climb im B-Pump",
+    "published_at": "2025-06-28T09:45:01Z",
+    "view_count": 418,
+    "like_count": 25,
+    "comment_count": 14,
+    "participants": [
+      "Tasso",
+      "Symeon"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Japan"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "_yCNjOGBc88",
+    "title": "Comeback im Boulder-Stil! ‍️ Moritz ist zurück – Steinbock Nürnberg wird zur Boulder-Arena!",
+    "published_at": "2025-06-20T22:00:57Z",
+    "view_count": 506,
+    "like_count": 22,
+    "comment_count": 11,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre"
+    ],
+    "boulders": [
+      {
+        "difficulty": "4",
+        "color": "Purple",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Top",
+          "Andre": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Top",
+          "Andre": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "hc1eaMW0kOg",
+    "title": "Vier Freunde, ein Ziel: Wer gewinnt das Boulder-Battle im Steinbock Erlangen? ‍️",
+    "published_at": "2025-06-14T09:45:03Z",
+    "view_count": 422,
+    "like_count": 24,
+    "comment_count": 23,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "8TDNFhTurLU",
+    "title": "PowerBoulder x Friends: Unsere Freunde stellen sich der ultimativen Boulder-Challenge in München!",
+    "published_at": "2025-06-07T09:45:00Z",
+    "view_count": 467,
+    "like_count": 29,
+    "comment_count": 22,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Koray"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "Boulderwelt München",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "WwoPKSokz8Y",
+    "title": "Letzter Korea Vlog – Bouldern, Tradition & Abschied ! Vlog",
+    "published_at": "2025-06-05T09:45:05Z",
+    "view_count": 561,
+    "like_count": 16,
+    "comment_count": 3,
+    "participants": [
+      "Tasso"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Korea"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "M6m2m3A1LmE",
+    "title": "3-Mann Boulder Clash!  Wer holt sich den Titel? Kommt das große Comeback?",
+    "published_at": "2025-05-31T09:45:01Z",
+    "view_count": 366,
+    "like_count": 17,
+    "comment_count": 14,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Top",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "NBOM2nxruAI",
+    "title": "THECLIMB B – Beste Boulderhalle in Seoul?! + Shopping in Hongdae ‍️ Vlog",
+    "published_at": "2025-05-29T09:45:03Z",
+    "view_count": 230,
+    "like_count": 29,
+    "comment_count": 13,
+    "participants": [
+      "Tasso"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Korea"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "QkiYKV1XlQw",
+    "title": "Zerbrochen im Café Kraft – Mein härtester Boulder-Tag! | Bouldering Competition & Climber Adventure!",
+    "published_at": "2025-05-24T09:45:01Z",
+    "view_count": 601,
+    "like_count": 25,
+    "comment_count": 15,
+    "participants": [
+      "Tasso",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Tasso": "Top",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Tasso": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Tasso": "Fail",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "White",
+        "performances": {
+          "Tasso": "Flash",
+          "Seiko": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "1SBl48BWXOo",
+    "title": "Walking in Seoul Korea  Mit Mama unterwegs: Lotte Tower, Gangnam & Pokémon in Seoul!  Vlog",
+    "published_at": "2025-05-22T16:00:04Z",
+    "view_count": 154,
+    "like_count": 16,
+    "comment_count": 5,
+    "participants": [
+      "Tasso"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Korea"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "8yzj31oOMPk",
+    "title": "EIN TAG IN SEOUL: N Seoul Tower, Myeongdong  & Bouldern ! | Korea Vlog",
+    "published_at": "2025-05-18T11:00:12Z",
+    "view_count": 288,
+    "like_count": 22,
+    "comment_count": 13,
+    "participants": [
+      "Tasso"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Korea"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "oCpa2lOFUvg",
+    "title": "ICH ZEIGE MEINER MAMA KOREA  | Ankunft in SEOUL & HONGDAE Vibes | Korea Vlog",
+    "published_at": "2025-05-17T15:30:32Z",
+    "view_count": 301,
+    "like_count": 24,
+    "comment_count": 13,
+    "participants": [
+      "Tasso"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "None",
+      "country": "Korea"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "NrnIfmeBDhU",
+    "title": "Platz 1... aber verdient?!  | Unser Boulder-Competition im Steinbock",
+    "published_at": "2025-05-10T09:45:03Z",
+    "view_count": 772,
+    "like_count": 29,
+    "comment_count": 18,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Pink",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Flash",
+          "Seiko": "Top"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "cMl12DS0yKg",
+    "title": "Er hat’s echt geschafft!? Niemand hat damit gerechnet… Boulder Competition im E4",
+    "published_at": "2025-05-03T09:45:03Z",
+    "view_count": 705,
+    "like_count": 33,
+    "comment_count": 18,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Orange",
+        "performances": {
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "LdfU16lkR_E",
+    "title": "KRASSER BOULDER-WETTKAMPF!  Wer wird der KÖNIG in der größten Boulderhalle der Welt?! | Vlog 50",
+    "published_at": "2025-04-26T09:45:01Z",
+    "view_count": 694,
+    "like_count": 42,
+    "comment_count": 29,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Orange",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Moritz": "Flash",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "Block Helden Frankenjura",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "VjLj6ZHAHQ0",
+    "title": "UNSERE FIBO REISE eskaliert komplett!  Challenges, Stars & Muskelkater des Todes!",
+    "published_at": "2025-04-19T09:45:04Z",
+    "view_count": 449,
+    "like_count": 32,
+    "comment_count": 28,
+    "participants": [],
+    "boulders": [],
+    "location": {
+      "gym": null,
+      "country": null
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "RJm5sgS4pT4",
+    "title": "Finale Boulder-Challenge vor FIBO – zerlegt uns Steinbock ?   Wer wird siegen?",
+    "published_at": "2025-04-12T09:45:04Z",
+    "view_count": 562,
+    "like_count": 26,
+    "comment_count": 18,
+    "participants": [],
+    "boulders": [],
+    "location": {
+      "gym": null,
+      "country": null
+    },
+    "is_event": true,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "-39BIFiC4kY",
+    "title": "Bouldern in Nürnberg eskaliert – keiner von uns war bereit für diese Wand!",
+    "published_at": "2025-04-05T09:45:00Z",
+    "view_count": 838,
+    "like_count": 30,
+    "comment_count": 16,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Andre",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "BJnwDDhoUb0",
+    "title": "Moritz vs. E4 in Nürnberg: Holt er nach 4 Wochen Japan den 1. Platz zurück?",
+    "published_at": "2025-03-29T10:45:00Z",
+    "view_count": 711,
+    "like_count": 35,
+    "comment_count": 22,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Moritz",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Flash",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Top",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Fail",
+          "Moritz": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "5gsC8gzVZEM",
+    "title": "Bouldern im E4 ! Nur GRÜNE WÄNDE!  – Wer packt es? Kein Zurück!  ‍️",
+    "published_at": "2025-03-22T10:45:00Z",
+    "view_count": 543,
+    "like_count": 29,
+    "comment_count": 18,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Top",
+          "Andre": "Fail",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "goXj5vSzzyY",
+    "title": "Green Ranger COMEBACK!  Kann Andre noch Bouldern? | 6er Challenge in Steinbock Zirndorf",
+    "published_at": "2025-03-15T10:45:02Z",
+    "view_count": 499,
+    "like_count": 28,
+    "comment_count": 25,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "kNpmoIjykdo",
+    "title": "Das große Boulder-Rematch! Kann Richi seinen Titel verteidigen? | Boulderhalle Steinbock Nürnberg",
+    "published_at": "2025-03-08T10:45:04Z",
+    "view_count": 714,
+    "like_count": 27,
+    "comment_count": 20,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Flash",
+          "Tasso": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Top",
+          "Tasso": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Flash",
+          "Tasso": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "duFRfA-y3QU",
+    "title": "Das ist das Ding! Wer versagt, wer gewinnt? Überraschungssieg  in Steinbock Erlangen ?",
+    "published_at": "2025-03-01T10:45:05Z",
+    "view_count": 857,
+    "like_count": 35,
+    "comment_count": 23,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Top",
+          "Tasso": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "8ZywGYLZRmM",
+    "title": "Boulder Bundesliga im Café Kraft  – Sind wir stark genug für Liga 2? Wer scheitert zuerst?",
+    "published_at": "2025-02-22T10:45:01Z",
+    "view_count": 1304,
+    "like_count": 43,
+    "comment_count": 25,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Moritz",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "7",
+        "color": "Black",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": true,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "JgizUtMh4-0",
+    "title": "Geheime Boulderhalle entdeckt! Warum kennt sie niemand?!   Geheimtipp?  Wie gut ist die Halle ?",
+    "published_at": "2025-02-15T10:45:02Z",
+    "view_count": 1030,
+    "like_count": 30,
+    "comment_count": 21,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Moritz",
+      "Seiko"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": "Boulderia GmbH",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "yuikM_qmUwc",
+    "title": "TOTALER ABSTURZ!  Die GRÜNEN BOULDERWÄNDE in E4 lassen uns verzweifeln!",
+    "published_at": "2025-02-08T10:45:04Z",
+    "view_count": 860,
+    "like_count": 32,
+    "comment_count": 35,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Top",
+          "Seiko": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "7S_ufMQAegc",
+    "title": "DER LETZTE RANGER IST DA!  Episches Boulder-Battle im Steinbock Nürnberg! Wer gewinnt das Battle ?",
+    "published_at": "2025-02-01T10:45:00Z",
+    "view_count": 864,
+    "like_count": 32,
+    "comment_count": 25,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Andre",
+      "Moritz"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Flash",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Andre": "Top",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Blue",
+        "performances": {
+          "Richi": "Fail",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Andre": "Fail",
+          "Moritz": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "7RZIhpE8s7M",
+    "title": "3 Ranger – 1 Sieger: Der epische Dreikampf Wer setzt sich durch?  Bouldern im Steinbock Zirndorf",
+    "published_at": "2025-01-25T10:45:00Z",
+    "view_count": 514,
+    "like_count": 28,
+    "comment_count": 29,
+    "participants": [
+      "Alex",
+      "Tasso",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Alex": "Flash",
+          "Tasso": "Top",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Seiko": "Fail"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Blue",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Flash",
+          "Seiko": "Flash"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Green",
+        "performances": {
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Seiko": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Zindorf",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "9TGYQYwRzoU",
+    "title": "Black Ranger Comeback: Kann er nach 6 Wochen noch gewinnen? | 200 Abos Special! Steinbock Erlangen !",
+    "published_at": "2025-01-18T10:45:02Z",
+    "view_count": 782,
+    "like_count": 33,
+    "comment_count": 27,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Moritz",
+      "Seiko",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Purple",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Fail",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Pink",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Seiko": "Fail",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Yellow",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Seiko": "Top",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Erlangen",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "hqzB-kawRpk",
+    "title": "Nur Einer Kann Gewinnen: Boulder-Battle Im Café Kraft Nürnberg Wer Holt Den Sieg?",
+    "published_at": "2025-01-11T10:45:05Z",
+    "view_count": 1366,
+    "like_count": 31,
+    "comment_count": 26,
+    "participants": [
+      "Richi",
+      "Tasso",
+      "Moritz"
+    ],
+    "boulders": [
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Top",
+          "Tasso": "Top",
+          "Moritz": "Flash"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Red",
+        "performances": {
+          "Richi": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Top"
+        }
+      },
+      {
+        "difficulty": "5",
+        "color": "Pink",
+        "performances": {
+          "Richi": "Flash",
+          "Tasso": "Fail",
+          "Moritz": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "CafeKraft",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "9w7xH0zSr8M",
+    "title": "Kann Alex Nach So Langer Pause Noch BOULDERN ?! ‍️ Steinbock Nürnberg Wird Zum Härtetest!",
+    "published_at": "2025-01-04T10:46:33Z",
+    "view_count": 1186,
+    "like_count": 29,
+    "comment_count": 28,
+    "participants": [
+      "Richi",
+      "Alex",
+      "Tasso",
+      "Moritz",
+      "Koray"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Green",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Flash",
+          "Tasso": "Flash",
+          "Moritz": "Flash",
+          "Koray": "Top"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Top",
+          "Tasso": "Flash",
+          "Moritz": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Top",
+          "Tasso": "Flash",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Red",
+        "performances": {
+          "Richi": "Flash",
+          "Alex": "Fail",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "Black",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Moritz": "Top",
+          "Koray": "Fail"
+        }
+      },
+      {
+        "difficulty": "6",
+        "color": "White",
+        "performances": {
+          "Richi": "Top",
+          "Alex": "Top",
+          "Tasso": "Fail",
+          "Moritz": "Flash",
+          "Koray": "Fail"
+        }
+      }
+    ],
+    "location": {
+      "gym": "der Steinbock Nuremberg",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "XAxJnIlmSrg",
+    "title": "THAILAND - FINALE : Die schönsten Tempel & Streetfood in Bangkoks Chinatown!",
+    "published_at": "2025-01-01T17:00:33Z",
+    "view_count": 398,
+    "like_count": 23,
+    "comment_count": 14,
+    "participants": [
+      "Tasso"
+    ],
+    "boulders": [],
+    "location": {
+      "gym": null,
+      "country": "Thailand"
+    },
+    "is_event": false,
+    "remove_from_elo": true,
+    "annotated": true
+  },
+  {
+    "video_id": "KzQ9oCggU1E",
+    "title": "7 Wände, 4 Kletterer: Wer wird die BOULDER-CHALLENGE im Stieinbock Zirndorf gewinnen? [PowerBoulder]",
+    "published_at": "2024-12-28T10:45:01Z",
+    "view_count": 595,
+    "like_count": 20,
+    "comment_count": 17,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "EyNkMFd6lwk",
+    "title": "BANGKOK Calling: Vom Strand in die City – Bouldern im größten GYM Thailands!",
+    "published_at": "2024-12-25T17:00:17Z",
+    "view_count": 438,
+    "like_count": 12,
+    "comment_count": 11,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "9lXX_bUrC8w",
+    "title": "WOW -  BOULDERN im Steinbock Erlangen: Tasso, Andre & Richi im Wettkampf!",
+    "published_at": "2024-12-21T11:00:16Z",
+    "view_count": 525,
+    "like_count": 20,
+    "comment_count": 19,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "xslG2kwTt8Y",
+    "title": "Ich esse 24 h NUR aus 7-Eleven in Thailand!  Unglaubliche Snacks & Mahlzeiten!!! [PowerBoulder]",
+    "published_at": "2024-12-18T17:00:58Z",
+    "view_count": 963,
+    "like_count": 19,
+    "comment_count": 12,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "zRkEi09rj5Q",
+    "title": "Wer schafft die schwerste Wand? Unsere epische Boulder-Challenge im E4 – Anfänger, Fails & Spaß!",
+    "published_at": "2024-12-14T10:45:03Z",
+    "view_count": 784,
+    "like_count": 25,
+    "comment_count": 11,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "jHX_Ciqskvc",
+    "title": "Nachtleben in PATONG Rollerfahrt, Streetfood & Action!  Must-See Thailand-Vlog! [PowerBoulder]",
+    "published_at": "2024-12-11T17:00:50Z",
+    "view_count": 679,
+    "like_count": 22,
+    "comment_count": 13,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "xUtUKdaKKAo",
+    "title": "Boulder-Battle in Steinbock Nürnberg! ‍️ Spaß, Action & Comeback nach Thailand ! [PowerBoulder]",
+    "published_at": "2024-12-07T10:30:33Z",
+    "view_count": 874,
+    "like_count": 23,
+    "comment_count": 16,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "sTBORKV9Rrw",
+    "title": "Mit dem Roller durch PHUKET - BIG BUDDHA und wilde Wellen  [PowerBoulder]",
+    "published_at": "2024-12-04T17:00:52Z",
+    "view_count": 319,
+    "like_count": 16,
+    "comment_count": 11,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "EAw7NjGeLhM",
+    "title": "Abenteuer beginnt: Von Frankfurt nach Phuket ️ Nightmarkets & Traumstrände warten! [PowerBoulder]",
+    "published_at": "2024-11-30T10:45:00Z",
+    "view_count": 669,
+    "like_count": 26,
+    "comment_count": 17,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "lOGuNQyGQTU",
+    "title": "WIR bekommen einen Profi!  Wer ist der Orangene Ranger?! Blockhelden Erlangen [PowerBoulder]",
+    "published_at": "2024-11-23T10:45:04Z",
+    "view_count": 361,
+    "like_count": 18,
+    "comment_count": 11,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "g9YWcsNRLSs",
+    "title": "Der Verschollene Ranger ist ZURÜCK!  Wird er UNS alle beim BOULDERN besiegen?  [PowerBoulder]",
+    "published_at": "2024-11-16T10:45:02Z",
+    "view_count": 355,
+    "like_count": 18,
+    "comment_count": 14,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "RsJyuXZ0Lwc",
+    "title": "ALLES AUF KOPF! - Heute nur  Überhang!  -  [PowerBoulder]",
+    "published_at": "2024-11-09T10:45:01Z",
+    "view_count": 297,
+    "like_count": 15,
+    "comment_count": 10,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "z593GIv4zgY",
+    "title": "ASH KETCHUM, das neue POWERBOULDER Mitglied?",
+    "published_at": "2024-10-26T09:45:03Z",
+    "view_count": 382,
+    "like_count": 20,
+    "comment_count": 14,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "L47ldcakt7Y",
+    "title": "Unerwarteter Besuch im Boulder-Gym!  + MEEEERCH iz da ! [PowerBoulder]",
+    "published_at": "2024-10-18T22:00:21Z",
+    "view_count": 427,
+    "like_count": 19,
+    "comment_count": 19,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "hBJRHjVJgx8",
+    "title": "Das MUSST du sehen! Die größte Kärwa Deutschlands hat uns umgehauen!  [PowerBoulder]",
+    "published_at": "2024-10-12T09:45:04Z",
+    "view_count": 340,
+    "like_count": 18,
+    "comment_count": 13,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "pSrE2PsXh4U",
+    "title": "Dynamischer Boulder-Wettkampf in Bayern: Gibt es ein Comeback oder eine Niederlage?  [PowerBoulder]",
+    "published_at": "2024-10-05T09:30:27Z",
+    "view_count": 404,
+    "like_count": 16,
+    "comment_count": 13,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "3qfmuj_seVw",
+    "title": "Zweikampf! Gibt es Boulder BEEF ? : Tasso & Andre erobern Nürnberg! [ PowerBoulder ]",
+    "published_at": "2024-09-28T09:00:05Z",
+    "view_count": 233,
+    "like_count": 18,
+    "comment_count": 16,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "XzE42UFfr1w",
+    "title": "Der ULTIMATIVE Bouldering Showdown: Wer Stürzt als Erster?  + All-You-Can-Eat [ PowerBoulder ]",
+    "published_at": "2024-09-21T09:45:02Z",
+    "view_count": 433,
+    "like_count": 27,
+    "comment_count": 20,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "HNeC9DDkEa8",
+    "title": "Endloser Fahrrad-Trip & Boulder-Runde  + Überraschungsfund auf dem Nachtflohmarkt ! [ PowerBoulder ]",
+    "published_at": "2024-09-14T08:07:49Z",
+    "view_count": 249,
+    "like_count": 20,
+    "comment_count": 18,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "Vg7rLmoUoIM",
+    "title": "Volksfest-Abenteuer NBG: Wir waren auf alles vorbereitet.. oder doch nicht? [PowerBoulder] Vlog 20!",
+    "published_at": "2024-09-07T22:15:44Z",
+    "view_count": 603,
+    "like_count": 27,
+    "comment_count": 18,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "gHQR5-9X-JI",
+    "title": "Twitch Streamer am Limit: Bouldern in Nürnberg!  [ PowerBoulder ]",
+    "published_at": "2024-09-05T14:30:29Z",
+    "view_count": 260,
+    "like_count": 14,
+    "comment_count": 8,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "J1aXTRw5nZc",
+    "title": "Showdown beim Bouldern: Red Ranger stürzt ab!  [ PowerBoulder ]",
+    "published_at": "2024-08-29T14:30:07Z",
+    "view_count": 268,
+    "like_count": 13,
+    "comment_count": 7,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "1nk4pLWuxGY",
+    "title": "Vlog 17: Entspannte Boulder-Session mit Alex & Tasso",
+    "published_at": "2024-08-22T15:07:53Z",
+    "view_count": 207,
+    "like_count": 14,
+    "comment_count": 9,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "xDTr1L-eXfA",
+    "title": "Vlog 16: Boulder-Kampf der Ranger: Wer wird der neue Blockhelden-König? ‍️in Erlangen",
+    "published_at": "2024-08-15T14:30:31Z",
+    "view_count": 225,
+    "like_count": 14,
+    "comment_count": 12,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "LzmRYDSKSTM",
+    "title": "Vlog 15: White Ranger's Comeback: Sieg oder Niederlage? | Bouldern im Steinbock",
+    "published_at": "2024-08-08T14:30:09Z",
+    "view_count": 184,
+    "like_count": 9,
+    "comment_count": 5,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "bKJADEt1wPU",
+    "title": "100 Abonnenten Spezial: Bouldern – Wer ist der echte Grieche?",
+    "published_at": "2024-08-01T15:00:42Z",
+    "view_count": 207,
+    "like_count": 15,
+    "comment_count": 4,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "dZh1UawXB4Q",
+    "title": "Vlog 13: Erlangen Calling - Unser Besuch in der Kletterhalle aus dem letzten Magnus Midtbø Video!!!",
+    "published_at": "2024-07-18T15:30:11Z",
+    "view_count": 365,
+    "like_count": 15,
+    "comment_count": 3,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "HN0oMPOHmlM",
+    "title": "Vlog 12: Bouldern im Climbing Gym (Cafe Kraft): Ein Tag voller Herausforderungen!",
+    "published_at": "2024-07-11T13:30:06Z",
+    "view_count": 188,
+    "like_count": 16,
+    "comment_count": 2,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "WtkArwjH6zY",
+    "title": "Vlog 11: Boulder-Challenge in Nürnberg: Alex' Unerwartetes Tief!",
+    "published_at": "2024-07-04T02:00:12Z",
+    "view_count": 330,
+    "like_count": 15,
+    "comment_count": 6,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "If_LXzlyuGw",
+    "title": "Vlog 10: Bouldern im Steinbock Nürnberg & All You Can Eat - Enjoy the show",
+    "published_at": "2024-06-27T14:00:25Z",
+    "view_count": 488,
+    "like_count": 18,
+    "comment_count": 6,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "dM9DDaPIqOE",
+    "title": "Vlog 9: Kletter- und Boulder-Challenge in Zirndorf - Wer schlägt Seiko?",
+    "published_at": "2024-06-20T14:07:48Z",
+    "view_count": 253,
+    "like_count": 11,
+    "comment_count": 2,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "vhY6KZyBW5w",
+    "title": "Vlog 8: Abenteuer in der Halle - und die neue Ranger-Farbenwahl!  Wer gewinnt ? Bouldern!",
+    "published_at": "2024-06-13T13:18:49Z",
+    "view_count": 241,
+    "like_count": 12,
+    "comment_count": 5,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "frx4YFSBp2U",
+    "title": "Vlog 7: Boulderabenteuer - Auf dem Weg nach Erlangen! -Bouldern, wer GEWINNT?",
+    "published_at": "2024-06-06T14:17:51Z",
+    "view_count": 172,
+    "like_count": 13,
+    "comment_count": 1,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "2sdpnjU1k4Q",
+    "title": "Vlog 6 : Kletter- und Boulderabenteuer: Unser actiongeladener !",
+    "published_at": "2024-05-30T16:15:24Z",
+    "view_count": 178,
+    "like_count": 8,
+    "comment_count": 0,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "Jr_U4HwZMPM",
+    "title": "Vlog 5 : Neue Schuhe, neue Wege: Red Ranger klettert hoch hinaus! -Bouldert",
+    "published_at": "2024-05-23T14:39:28Z",
+    "view_count": 136,
+    "like_count": 11,
+    "comment_count": 2,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "k1PJYuDuHvc",
+    "title": "Vlog 4 : Epic Boulder Challenge: Wer ist der ultimative Kletterkönig?",
+    "published_at": "2024-05-16T19:25:32Z",
+    "view_count": 232,
+    "like_count": 12,
+    "comment_count": 0,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "_cXKLA2tU8k",
+    "title": "Vlog 3 :  BoulderRanger: Kleine Gruppe, Große Abenteuer! - Klettern für Anfänger",
+    "published_at": "2024-05-07T12:33:14Z",
+    "view_count": 151,
+    "like_count": 13,
+    "comment_count": 0,
+    "participants": [],
+    "boulders": [],
+    "location": {},
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  },
+  {
+    "video_id": "0O7zAyguJ3o",
+    "title": "Vlog 2 : Wer gewinnt? Der Rote Ranger?  Wir werden sehen!",
+    "published_at": "2024-05-02T09:48:04Z",
+    "view_count": 181,
+    "like_count": 14,
+    "comment_count": 1,
+    "participants": [
+      "Tasso",
+      "Andre",
+      "Seiko"
+    ],
+    "boulders": [
+      {
+        "difficulty": "5",
+        "color": "Black",
+        "performances": {
+          "Tasso": "Flash",
+          "Andre": "Flash",
+          "Seiko": "Flash"
+        }
+      }
+    ],
+    "location": {
+      "gym": "e4",
+      "country": "Germany"
+    },
+    "is_event": false,
+    "remove_from_elo": false,
+    "annotated": true
+  }
+]
