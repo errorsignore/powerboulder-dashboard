@@ -1,0 +1,62 @@
+{
+  "Alex": {
+    "age": 25,
+    "height": 175,
+    "country": "KAZ",
+    "fullName": "Alex"
+  },
+  "Tasso": {
+    "age": 27,
+    "height": 180,
+    "country": "GRE",
+    "fullName": "Tasso"
+  },
+  "Andre": {
+    "age": 24,
+    "height": 172,
+    "country": "ITA",
+    "fullName": "Andre"
+  },
+  "Richi": {
+    "age": 26,
+    "height": 178,
+    "country": "JPN",
+    "fullName": "Richi"
+  },
+  "Seiko": {
+    "age": 23,
+    "height": 165,
+    "country": "JPN",
+    "fullName": "Seiko"
+  },
+  "Moritz": {
+    "age": 28,
+    "height": 182,
+    "country": "GER",
+    "fullName": "Moritz"
+  },
+  "Koray": {
+    "age": 25,
+    "height": 176,
+    "country": "TUR",
+    "fullName": "Koray"
+  },
+  "Pedro": {
+    "age": 24,
+    "height": 176,
+    "country": "BRA",
+    "fullName": "Pedro Alonso Condessa"
+  },
+  "Symeon": {
+    "age": 26,
+    "height": 174,
+    "country": "GRC",
+    "fullName": "Symeon"
+  },
+  "Furkan": {
+    "age": 27,
+    "height": 177,
+    "country": "TUR",
+    "fullName": "Furkan"
+  }
+}

@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerBoulder ELO Rankings v2</title>
+    <title>PowerBoulder ELO Rankings</title>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@500;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,49 +14,60 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0E1117;
+            font-family: 'Barlow', 'Segoe UI', sans-serif;
+            background: #0a0e17;
             color: #E6EDF3;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
         .container {
-            display: flex;
-            height: 100vh;
-            padding: 20px;
+            display: grid;
+            grid-template-columns: 40% 60%;
             gap: 20px;
+            padding: 20px;
+            min-height: 100vh;
         }
 
+        /* Consistent section styling matching player profile */
+        .section {
+            background: linear-gradient(170deg, #1c3f62 0%, #0f2740 25%, #091d30 60%, #050e18 100%);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(50, 130, 195, 0.2);
+        }
+
+        .section-title {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: #d0b96a;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Left Panel */
         .left-panel {
-            width: 40%;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
         }
 
         .leaderboard-section {
             flex: 1;
-            background: #1C1F26;
-            border-radius: 12px;
-            padding: 20px;
-            overflow: hidden;
+            min-height: 500px;
             position: relative;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .leaderboard-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #FFD700;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
         }
 
         #leaderboard-container {
             position: relative;
             height: calc(100% - 60px);
+            min-height: 400px;
         }
 
         #leaderboard-chart {
@@ -105,23 +117,23 @@
             color: #E6EDF3;
             font-size: 13px;
             white-space: nowrap;
+            font-family: 'Barlow', sans-serif;
         }
 
+        /* Date Slider */
         .date-slider-section {
-            background: #1C1F26;
-            border-radius: 12px;
-            padding: 25px;
-            min-height: 170px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            min-height: 180px;
         }
 
         .slider-label {
+            font-family: 'Barlow Condensed', sans-serif;
             font-size: 18px;
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 20px;
-            color: #FFD700;
+            color: #d0b96a;
             text-align: center;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         .date-range-display {
@@ -130,7 +142,7 @@
             align-items: center;
             margin-bottom: 20px;
             padding: 12px 20px;
-            background: linear-gradient(135deg, #2D333B 0%, #1C1F26 100%);
+            background: rgba(0, 8, 18, 0.6);
             border-radius: 8px;
             box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
         }
@@ -141,6 +153,7 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 4px;
+            font-weight: 700;
         }
 
         .date-start, .date-end {
@@ -152,12 +165,12 @@
             color: #58A6FF;
             font-weight: bold;
             font-size: 16px;
+            font-family: 'Barlow Condensed', sans-serif;
         }
 
         .date-separator {
             color: #8B949E;
             font-size: 20px;
-            align-self: center;
         }
 
         .slider-container {
@@ -180,14 +193,12 @@
 
         input[type="range"]::-webkit-slider-thumb {
             -webkit-appearance: none;
-            appearance: none;
             width: 24px;
             height: 24px;
             background: linear-gradient(135deg, #58A6FF 0%, #3B82F6 100%);
             cursor: pointer;
             border-radius: 50%;
             pointer-events: all;
-            position: relative;
             z-index: 2;
             box-shadow: 0 2px 8px rgba(88, 166, 255, 0.5);
             transition: transform 0.2s, box-shadow 0.2s;
@@ -230,59 +241,15 @@
             box-shadow: 0 2px 6px rgba(88, 166, 255, 0.4);
         }
 
+        /* Right Panel */
         .right-panel {
-            width: 60%;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
         .video-section {
-            flex: 0 0 45%;
-            background: #1C1F26;
-            border-radius: 12px;
-            padding: 20px;
-            overflow-y: auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .stats-section {
-            flex: 1;
-            background: #1C1F26;
-            border-radius: 12px;
-            padding: 0;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .section-title {
-            font-size: 20px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #FFD700;
-            text-align: center;
-            padding-bottom: 12px;
-            border-bottom: 2px solid #2D333B;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .stats-title {
-            font-size: 20px;
-            font-weight: bold;
-            padding: 20px;
-            color: #FFD700;
-            text-align: center;
-            border-bottom: 2px solid #2D333B;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            flex-shrink: 0;
-        }
-
-        .stats-table-container {
-            flex: 1;
-            overflow-y: auto;
-            padding: 0;
+            min-height: 220px;
         }
 
         .video-content {
@@ -292,14 +259,16 @@
         }
 
         .video-thumbnail {
-            width: 300px;
-            height: 169px;
+            width: 280px;
+            min-width: 200px;
+            height: 158px;
             border-radius: 8px;
             object-fit: cover;
             background: #2D333B;
             cursor: pointer;
             transition: transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            flex-shrink: 0;
         }
 
         .video-thumbnail:hover {
@@ -309,6 +278,7 @@
 
         .video-info {
             flex: 1;
+            min-width: 0;
         }
 
         .video-title {
@@ -316,54 +286,92 @@
             font-weight: bold;
             margin-bottom: 10px;
             color: #E6EDF3;
+            font-family: 'Barlow', sans-serif;
         }
 
         .video-date {
             font-size: 14px;
             color: #8B949E;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .video-stats {
-            display: flex;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 12px;
             margin-top: 15px;
-            font-size: 14px;
         }
 
         .video-stat {
             display: flex;
-            align-items: center;
-            gap: 5px;
+            flex-direction: column;
+            gap: 4px;
+            padding: 8px 12px;
+            background: rgba(0, 8, 18, 0.6);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .video-stat-label {
+            font-size: 10px;
             color: #8B949E;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
         }
 
         .video-stat-value {
-            font-weight: bold;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
             color: #58A6FF;
+        }
+
+        .video-stat-icon {
+            margin-right: 4px;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            flex: 1;
+            overflow-x: auto;
+        }
+
+        .stats-table-container {
+            width: 100%;
+            overflow-x: auto;
         }
 
         .stats-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 11px;
+            font-family: 'Barlow', sans-serif;
         }
 
         .stats-table th {
-            background: #2D333B;
+            background: rgba(0, 8, 18, 0.8);
             padding: 12px 8px;
             text-align: left;
-            font-weight: bold;
+            font-weight: 700;
             color: #8B949E;
-            border-bottom: 2px solid #1C1F26;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
             position: sticky;
             top: 0;
             z-index: 10;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
         }
 
         .stats-table td {
             padding: 10px 8px;
-            border-bottom: 1px solid #2D333B;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            white-space: nowrap;
         }
 
         .stats-table tbody tr {
@@ -371,9 +379,10 @@
         }
 
         .stats-table tbody tr:hover {
-            background: #2D333B;
+            background: rgba(0, 8, 18, 0.4);
         }
 
+        /* Player Colors */
         .player-tasso { color: #DC143C; }
         .player-symeon { color: #0000FF; }
         .player-seiko { color: #888888; }
@@ -394,38 +403,104 @@
             color: #8B949E;
         }
 
-        /* Scrollbar styling */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .left-panel {
+                order: 2;
+            }
+
+            .right-panel {
+                order: 1;
+            }
+
+            .leaderboard-section {
+                min-height: 600px;
+            }
         }
 
-        ::-webkit-scrollbar-track {
-            background: #1C1F26;
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+                gap: 15px;
+            }
+
+            .section {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            .video-content {
+                flex-direction: column;
+            }
+
+            .video-thumbnail {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .stats-table {
+                font-size: 10px;
+            }
+
+            .stats-table th,
+            .stats-table td {
+                padding: 8px 4px;
+            }
+
+            .player-img {
+                width: 28px;
+                height: 28px;
+            }
+
+            .player-name {
+                font-size: 11px;
+            }
+
+            .date-range-display {
+                flex-direction: column;
+                gap: 10px;
+                align-items: flex-start;
+            }
+
+            .date-separator {
+                display: none;
+            }
         }
 
-        ::-webkit-scrollbar-thumb {
-            background: #2D333B;
-            border-radius: 4px;
-        }
+        @media (max-width: 480px) {
+            .video-stats {
+                grid-template-columns: 1fr;
+            }
 
-        ::-webkit-scrollbar-thumb:hover {
-            background: #3D434B;
+            .stats-table th,
+            .stats-table td {
+                font-size: 9px;
+                padding: 6px 3px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Left Panel -->
         <div class="left-panel">
-            <div class="leaderboard-section">
-                <div class="leaderboard-title">🏆 PowerBoulder Rangers - ELO Rankings</div>
+            <div class="section leaderboard-section">
+                <div class="section-title">🏆 PowerBoulder Rangers - ELO Rankings</div>
                 <div id="leaderboard-container">
                     <div id="player-images"></div>
                     <div id="leaderboard-chart"></div>
                 </div>
             </div>
             
-            <div class="date-slider-section">
+            <div class="section date-slider-section">
                 <div class="slider-label">Select Date Range</div>
                 <div class="date-range-display">
                     <div class="date-start">
@@ -447,14 +522,15 @@
             </div>
         </div>
 
+        <!-- Right Panel -->
         <div class="right-panel">
-            <div class="video-section">
+            <div class="section video-section">
                 <div class="section-title">📹 Latest Video</div>
                 <div id="video-content" class="loading">Loading video data...</div>
             </div>
 
-            <div class="stats-section">
-                <div class="stats-title">📊 Cumulative Stats</div>
+            <div class="section stats-section">
+                <div class="section-title">📊 Cumulative Stats</div>
                 <div class="stats-table-container">
                     <div id="stats-content" class="loading">Loading statistics...</div>
                 </div>
@@ -462,6 +538,7 @@
         </div>
     </div>
 
+    <script src="annotated_data.json" type="application/json" id="videos-data"></script>
     <script>
         const PLAYER_COLORS = {
             "Tasso": "#DC143C", "Symeon": "#0000FF", "Seiko": "#000000",
@@ -477,9 +554,12 @@
             videosData = await loadVideosData();
             
             if (videosData.length === 0) {
-                document.getElementById('video-content').innerHTML = '<p>No video data available. Make sure annotated_data.json is in the same folder.</p>';
+                document.getElementById('video-content').innerHTML = '<p>No video data available. Make sure videos_data.json is in the same folder.</p>';
                 return;
             }
+
+            // Sort videos by date (oldest to newest) - FIXED
+            videosData.sort((a, b) => new Date(a.published_at) - new Date(b.published_at));
 
             console.log(`Loaded ${videosData.length} videos`);
             setupDateSliders();
@@ -495,7 +575,7 @@
                 return data;
             } catch (error) {
                 console.error('Error loading videos data:', error);
-                alert('Failed to load annotated_data.json. Make sure the file is in the same folder as this HTML file.');
+                alert('Failed to load videos_data.json. Make sure the file is in the same folder as this HTML file.');
                 return [];
             }
         }
@@ -689,7 +769,8 @@
                 }
             }
 
-            const latestVideo = videosData[startIndex];
+            // Latest video is now at endIndex (most recent)
+            const latestVideo = videosData[endIndex];
             return { elo, stats, latestVideo };
         }
 
@@ -715,13 +796,8 @@
             const scores = sorted.map(([_, score]) => Math.round(score));
             const colors = names.map(name => PLAYER_COLORS[name] || "#58A6FF");
 
-            // Calculate max score to ensure numbers fit
             const maxScore = Math.max(...scores);
-            const scoreRange = maxScore - Math.min(...scores);
             
-            // Adjust bar width to leave space for the number
-            const maxBarWidth = 0.75; // Use 75% of available space for bars
-
             const chartContainer = document.getElementById('leaderboard-container');
             const chartHeight = chartContainer.clientHeight;
             
@@ -739,12 +815,12 @@
             }];
 
             const layout = {
-                paper_bgcolor: '#1C1F26',
-                plot_bgcolor: '#1C1F26',
-                font: { color: '#E6EDF3', family: 'Segoe UI' },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#E6EDF3', family: 'Barlow' },
                 margin: { l: 140, r: 100, t: 0, b: 40 },
                 xaxis: {
-                    gridcolor: 'transparent',
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
                     showgrid: false,
                     zeroline: false,
                     title: '',
@@ -760,7 +836,8 @@
                     showticklabels: false
                 },
                 showlegend: false,
-                height: chartHeight
+                height: chartHeight,
+                autosize: true
             };
 
             const config = { responsive: true, displayModeBar: false };
@@ -778,10 +855,7 @@
             const chartDiv = document.getElementById('leaderboard-chart');
             const plotlyPlot = chartDiv._fullLayout;
             
-            if (!plotlyPlot) {
-                console.error('Chart not ready');
-                return;
-            }
+            if (!plotlyPlot) return;
 
             const chartHeight = plotlyPlot.height;
             const margin = plotlyPlot.margin;
@@ -805,15 +879,9 @@
                 img.src = `faces/${name}.png`;
                 img.className = 'player-img';
                 img.style.borderColor = colors[index];
-                
-                img.onload = function() {
-                    console.log(`✓ Loaded: faces/${name}.png`);
-                };
-                
-                img.onerror = function() {
-                    console.error(`✗ Failed to load: faces/${name}.png`);
-                    this.style.backgroundColor = colors[index];
-                    this.style.opacity = '0.3';
+                img.onerror = () => {
+                    img.style.backgroundColor = colors[index];
+                    img.style.opacity = '0.3';
                 };
 
                 const nameSpan = document.createElement('span');
@@ -834,6 +902,11 @@
             const videoIndex = videosData.findIndex(v => v.video_id === video.video_id);
             const videoNumber = videoIndex + 1;
 
+            // Extract new stats fields
+            const viewCount = video.view_count || 0;
+            const likeCount = video.like_count || 0;
+            const commentCount = video.comment_count || 0;
+
             content.innerHTML = `
                 <div class="video-content">
                     <a href="${youtubeUrl}" target="_blank">
@@ -847,9 +920,20 @@
                         <div class="video-date">📅 ${date}</div>
                         <div class="video-stats">
                             <div class="video-stat">
-                                <span>📹</span>
-                                <span class="video-stat-value">#${videoNumber}</span>
-                                <span>of ${videosData.length}</span>
+                                <div class="video-stat-label"><span class="video-stat-icon">👁️</span>Views</div>
+                                <div class="video-stat-value">${viewCount.toLocaleString()}</div>
+                            </div>
+                            <div class="video-stat">
+                                <div class="video-stat-label"><span class="video-stat-icon">👍</span>Likes</div>
+                                <div class="video-stat-value">${likeCount.toLocaleString()}</div>
+                            </div>
+                            <div class="video-stat">
+                                <div class="video-stat-label"><span class="video-stat-icon">💬</span>Comments</div>
+                                <div class="video-stat-value">${commentCount.toLocaleString()}</div>
+                            </div>
+                            <div class="video-stat">
+                                <div class="video-stat-label"><span class="video-stat-icon">📹</span>Video #</div>
+                                <div class="video-stat-value">${videoNumber} / ${videosData.length}</div>
                             </div>
                         </div>
                     </div>
@@ -906,6 +990,14 @@
             tableHTML += '</tbody></table>';
             document.getElementById('stats-content').innerHTML = tableHTML;
         }
+
+        // Handle window resize for charts
+        window.addEventListener('resize', () => {
+            if (videosData.length > 0) {
+                const result = calculateEloForRange();
+                updateLeaderboard(result.elo);
+            }
+        });
 
         window.addEventListener('DOMContentLoaded', initDashboard);
     </script>

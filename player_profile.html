@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player Profile</title>
+    <title>Player Profile - PowerBoulder</title>
     <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Barlow:wght@500;700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,8 +14,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #0E1117;
+            font-family: 'Barlow', sans-serif;
+            background: #0a0e17;
             color: #E6EDF3;
             min-height: 100vh;
             padding: 20px;
@@ -24,119 +25,233 @@
             display: inline-block;
             margin-bottom: 20px;
             padding: 10px 20px;
-            background: #2D333B;
+            background: #1a2332;
             color: #E6EDF3;
             text-decoration: none;
             border-radius: 8px;
             transition: background 0.3s;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
         }
 
         .back-button:hover {
-            background: #3D434B;
+            background: #2a3342;
         }
 
-        .header-section {
-            background: #1C1F26;
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* ═══════════════════════════════════
+           ATHLETE CARD HEADER
+        ═══════════════════════════════════ */
+        .athlete-card {
+            width: 100%;
+            height: 280px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(170deg, #1c3f62 0%, #0f2740 25%, #091d30 60%, #050e18 100%);
             border-radius: 12px;
-            padding: 30px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
         }
 
-        .header-content {
+        .country-code-bg {
+            position: absolute;
+            right: -80px;
+            top: 50%;
+            transform: translateY(-50%) rotate(90deg);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 180px;
+            font-weight: 900;
+            color: rgba(50, 130, 195, 0.25);
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            pointer-events: none;
+            white-space: nowrap;
+            z-index: 1;
+            line-height: 1;
+        }
+
+        .athlete-photo {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 45%;
+            object-fit: contain;
+            object-position: center 35%;
+            z-index: 2;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 15%, black 40%);
+            mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 15%, black 40%);
+        }
+
+        .athlete-info {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 60%;
+            padding: 30px 40px;
             display: flex;
-            gap: 30px;
-            align-items: flex-start;
+            flex-direction: column;
+            z-index: 3;
         }
 
-        .player-avatar {
-            width: 150px;
-            height: 150px;
+        .athlete-name-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .flag-circle {
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            border: 5px solid;
-            object-fit: cover;
-            background: #2D333B;
+            overflow: hidden;
+            border: 3px solid rgba(255, 255, 255, 0.3);
             flex-shrink: 0;
+            background: #0a1520;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .player-info {
-            flex: 1;
+        .flag-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            display: block;
         }
 
-        .player-name {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        .flag-placeholder {
+            font-size: 10px;
+            color: #4da8da;
+            text-align: center;
+            font-weight: 700;
         }
 
-        .social-links {
+        .athlete-name {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 52px;
+            font-weight: 900;
+            line-height: 0.95;
+            color: #d0b96a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Statistics Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 15px;
             margin-bottom: 20px;
         }
 
-        .social-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            background: linear-gradient(135deg, #E1306C, #C13584);
-            color: white;
-            text-decoration: none;
-            border-radius: 20px;
-            font-size: 14px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .social-link:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.4);
-        }
-
-        .player-stats-summary {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .stat-box {
-            background: #2D333B;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
         }
 
         .stat-label {
-            font-size: 12px;
-            color: #8B949E;
+            font-family: 'Barlow', sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
+            color: #8B949E;
         }
 
         .stat-value {
-            font-size: 24px;
-            font-weight: bold;
-            color: #58A6FF;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1;
         }
 
+        .stat-value .unit {
+            font-size: 10px;
+            vertical-align: super;
+        }
+
+        /* Podium Row */
+        .podium-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .podium-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(0, 8, 18, 0.6);
+            border-radius: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .podium-label {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .podium-1st { color: #e8cc46; }
+        .podium-2nd { color: #d8d8d8; }
+        .podium-3rd { color: #d4854a; }
+
+        .podium-sep {
+            color: rgba(255, 255, 255, 0.4);
+            font-weight: 400;
+        }
+
+        .podium-count {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        /* ═══════════════════════════════════
+           SECTIONS
+        ═══════════════════════════════════ */
         .section {
-            background: #1C1F26;
+            background: linear-gradient(170deg, #1c3f62 0%, #0f2740 25%, #091d30 60%, #050e18 100%);
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(50, 130, 195, 0.2);
         }
 
         .section-title {
+            font-family: 'Barlow Condensed', sans-serif;
             font-size: 22px;
-            font-weight: bold;
-            color: #FFD700;
+            font-weight: 800;
+            color: #d0b96a;
             margin-bottom: 20px;
             text-align: center;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
+        /* Tier Graph */
+        #tier-chart {
+            width: 100%;
+            height: 300px;
+        }
+
+        /* Performance Chart */
         #performance-chart {
             width: 100%;
             height: 400px;
@@ -157,20 +272,24 @@
         }
 
         .date-filter-group label {
-            font-size: 12px;
+            font-size: 11px;
             color: #8B949E;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
         }
 
         .date-filter-group input {
             padding: 8px 12px;
-            background: #2D333B;
-            border: 1px solid #3D434B;
+            background: rgba(0, 8, 18, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: 6px;
             color: #E6EDF3;
             font-size: 14px;
+            font-family: 'Barlow', sans-serif;
         }
 
+        /* Head to Head */
         .opponent-selector {
             display: flex;
             justify-content: center;
@@ -180,23 +299,24 @@
         }
 
         .opponent-selector label {
-            font-size: 16px;
+            font-size: 14px;
             color: #8B949E;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .opponent-selector select {
             padding: 10px 20px;
-            background: #2D333B;
-            border: 2px solid #3D434B;
+            background: rgba(0, 8, 18, 0.8);
+            border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 8px;
             color: #E6EDF3;
             font-size: 16px;
             cursor: pointer;
             min-width: 200px;
-        }
-
-        .opponent-selector select:hover {
-            border-color: #58A6FF;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 700;
         }
 
         .h2h-stats {
@@ -212,9 +332,11 @@
         }
 
         .h2h-player-name {
-            font-size: 20px;
-            font-weight: bold;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 24px;
+            font-weight: 800;
             margin-bottom: 10px;
+            letter-spacing: 1px;
         }
 
         .h2h-player-img {
@@ -223,47 +345,232 @@
             border-radius: 50%;
             border: 4px solid;
             object-fit: cover;
-            background: #2D333B;
+            background: #1a2332;
             margin: 0 auto 10px;
         }
 
         .h2h-vs {
+            font-family: 'Barlow Condensed', sans-serif;
             font-size: 32px;
-            font-weight: bold;
-            color: #FFD700;
+            font-weight: 900;
+            color: #d0b96a;
         }
 
         .h2h-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
         }
 
         .h2h-table th {
-            background: #2D333B;
+            background: rgba(0, 8, 18, 0.8);
             padding: 12px;
             text-align: left;
-            font-weight: bold;
+            font-weight: 700;
             color: #8B949E;
-            border-bottom: 2px solid #1C1F26;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .h2h-table td {
             padding: 12px;
-            border-bottom: 1px solid #2D333B;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
         }
 
         .h2h-table tbody tr:hover {
-            background: #2D333B;
+            background: rgba(0, 8, 18, 0.4);
         }
+
+        /* ═══════════════════════════════════
+           MATCH HISTORY (OP.GG Style)
+        ═══════════════════════════════════ */
+        .match-history {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .match-card {
+            display: grid;
+            grid-template-columns: 80px 140px 100px 1fr 240px;
+            gap: 15px;
+            align-items: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid;
+            transition: transform 0.2s;
+        }
+
+        .match-thumbnail {
+            width: 80px;
+            height: 45px;
+            border-radius: 4px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            background: rgba(0, 8, 18, 0.8);
+        }
+
+        .match-thumbnail:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(208, 185, 106, 0.4);
+        }
+
+        .match-card:hover {
+            transform: translateX(4px);
+        }
+
+        /* Background colors based on placement */
+        .match-win {
+            background: linear-gradient(90deg, rgba(232, 204, 70, 0.15) 0%, rgba(232, 204, 70, 0.05) 100%);
+            border-color: rgba(232, 204, 70, 0.3);
+        }
+
+        .match-second {
+            background: linear-gradient(90deg, rgba(216, 216, 216, 0.15) 0%, rgba(216, 216, 216, 0.05) 100%);
+            border-color: rgba(216, 216, 216, 0.3);
+        }
+
+        .match-third {
+            background: linear-gradient(90deg, rgba(212, 133, 74, 0.15) 0%, rgba(212, 133, 74, 0.05) 100%);
+            border-color: rgba(212, 133, 74, 0.3);
+        }
+
+        .match-loss {
+            background: linear-gradient(90deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%);
+            border-color: rgba(220, 38, 38, 0.3);
+        }
+
+        .match-placement {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .placement-badge {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .match-win .placement-badge { color: #e8cc46; }
+        .match-second .placement-badge { color: #d8d8d8; }
+        .match-third .placement-badge { color: #d4854a; }
+        .match-loss .placement-badge { color: #dc2626; }
+
+        .placement-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8B949E;
+            font-weight: 700;
+        }
+
+        .match-date {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .match-date-value {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            color: #E6EDF3;
+        }
+
+        .match-date-label {
+            font-size: 10px;
+            color: #8B949E;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .match-details {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .match-title {
+            font-family: 'Barlow', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #E6EDF3;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .match-participants {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .participant-badge {
+            padding: 2px 8px;
+            background: rgba(0, 8, 18, 0.8);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .match-stats {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .match-stat {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .match-stat-label {
+            font-size: 9px;
+            color: #8B949E;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .match-stat-value {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .stat-flash { color: #e8cc46; }
+        .stat-top { color: #4ade80; }
+        .stat-fail { color: #dc2626; }
+        .stat-score { color: #58A6FF; }
+        .stat-elo-gain { color: #4ade80; }
+        .stat-elo-loss { color: #dc2626; }
 
         .no-duel-message {
             text-align: center;
             padding: 40px;
             color: #8B949E;
-            font-size: 18px;
+            font-size: 16px;
         }
 
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #8B949E;
+        }
+
+        /* Color classes */
         .player-tasso { color: #DC143C; }
         .player-symeon { color: #0000FF; }
         .player-seiko { color: #888888; }
@@ -275,51 +582,361 @@
         .player-moritz { color: #FF8C00; }
         .player-furkan { color: #808080; }
 
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #8B949E;
+        /* ═══════════════════════════════════
+           RESPONSIVE DESIGN
+        ═══════════════════════════════════ */
+        @media (max-width: 1200px) {
+            .athlete-card {
+                height: 250px;
+            }
+
+            .country-code-bg {
+                font-size: 140px;
+            }
+
+            .athlete-name {
+                font-size: 42px;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(4, 1fr);
+            }
+
+            .match-card {
+                grid-template-columns: 70px 120px 90px 1fr 200px;
+                gap: 10px;
+                padding: 10px 15px;
+            }
+        }
+
+        @media (max-width: 968px) {
+            body {
+                padding: 15px;
+            }
+
+            .athlete-card {
+                height: auto;
+                min-height: 200px;
+                padding-bottom: 20px;
+            }
+
+            .athlete-info {
+                width: 100%;
+                padding: 20px 25px;
+                position: relative;
+            }
+
+            .athlete-photo {
+                width: 35%;
+                opacity: 0.4;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+
+            .podium-row {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .h2h-stats {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .h2h-vs {
+                display: none;
+            }
+
+            .match-card {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .match-thumbnail {
+                width: 100%;
+                height: auto;
+                max-height: 200px;
+            }
+
+            .match-stats {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            #tier-chart,
+            #performance-chart {
+                height: 300px !important;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .section {
+                padding: 15px;
+            }
+
+            .section-title {
+                font-size: 18px;
+            }
+
+            .athlete-card {
+                height: auto;
+            }
+
+            .country-code-bg {
+                font-size: 100px;
+                right: -50px;
+            }
+
+            .athlete-name {
+                font-size: 32px;
+            }
+
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            .stat-label {
+                font-size: 9px;
+            }
+
+            .stat-value {
+                font-size: 18px;
+            }
+
+            .date-filter {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .date-filter-group {
+                width: 100%;
+            }
+
+            .date-filter-group input {
+                width: 100%;
+            }
+
+            .opponent-selector {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .opponent-selector select {
+                width: 100%;
+            }
+
+            .h2h-table {
+                font-size: 10px;
+            }
+
+            .h2h-table th,
+            .h2h-table td {
+                padding: 8px 4px;
+            }
+
+            .match-stats {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+            }
+
+            .match-stat-label {
+                font-size: 8px;
+            }
+
+            .match-stat-value {
+                font-size: 14px;
+            }
+
+            #tier-chart,
+            #performance-chart {
+                height: 250px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .back-button {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+
+            .athlete-card {
+                margin-bottom: 15px;
+            }
+
+            .athlete-name {
+                font-size: 28px;
+            }
+
+            .athlete-info {
+                padding: 15px 20px;
+            }
+
+            .stats-row {
+                gap: 6px;
+            }
+
+            .stat-value {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 12px;
+            }
+
+            .section-title {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            .match-card {
+                padding: 10px;
+            }
+
+            .match-title {
+                font-size: 12px;
+            }
+
+            .participant-badge {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+
+            #tier-chart,
+            #performance-chart {
+                height: 200px !important;
+            }
         }
     </style>
 </head>
 <body>
-    <a href="elo_dashboard_final.html" class="back-button">← Back to Dashboard</a>
+    <div class="container">
+        <a href="elo_dashboard_final.html" class="back-button">← BACK TO DASHBOARD</a>
 
-    <div class="header-section">
-        <div class="header-content">
-            <img id="player-avatar" class="player-avatar" src="" alt="Player">
-            <div class="player-info">
-                <div class="player-name" id="player-name">Loading...</div>
-                <div class="social-links" id="social-links"></div>
-                <div class="player-stats-summary" id="stats-summary"></div>
+        <!-- ═══════════════════════════════════
+             ATHLETE CARD HEADER
+        ═══════════════════════════════════ -->
+        <div class="athlete-card">
+            <span class="country-code-bg" id="country-code">GER</span>
+            <img class="athlete-photo" id="athlete-photo" src="" alt="Player">
+            
+            <div class="athlete-info">
+                <div class="athlete-name-section">
+                    <div class="flag-circle" id="flag-container">
+                        <img id="flag-img" src="" alt="Flag" style="display:none;">
+                        <div class="flag-placeholder" id="flag-placeholder">FLAG</div>
+                    </div>
+                    <div class="athlete-name" id="athlete-name">Loading...</div>
+                </div>
+
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-label">Age</span>
+                        <span class="stat-value" id="stat-age">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Height</span>
+                        <span class="stat-value" id="stat-height">-<span class="unit">CM</span></span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Tops %</span>
+                        <span class="stat-value" id="stat-tops-pct">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Videos</span>
+                        <span class="stat-value" id="stat-participations">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Boulders</span>
+                        <span class="stat-value" id="stat-boulders">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Flashes</span>
+                        <span class="stat-value stat-flash" id="stat-flashes">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Tops</span>
+                        <span class="stat-value stat-top" id="stat-tops">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Fails</span>
+                        <span class="stat-value stat-fail" id="stat-fails">-</span>
+                    </div>
+                </div>
+
+                <div class="podium-row">
+                    <div class="podium-item">
+                        <span class="podium-label podium-1st">1ST</span>
+                        <span class="podium-sep">-</span>
+                        <span class="podium-count" id="podium-1st">0</span>
+                    </div>
+                    <div class="podium-item">
+                        <span class="podium-label podium-2nd">2ND</span>
+                        <span class="podium-sep">-</span>
+                        <span class="podium-count" id="podium-2nd">0</span>
+                    </div>
+                    <div class="podium-item">
+                        <span class="podium-label podium-3rd">3RD</span>
+                        <span class="podium-sep">-</span>
+                        <span class="podium-count" id="podium-3rd">0</span>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="section">
-        <div class="section-title">📈 Performance Over Time</div>
-        <div class="date-filter">
-            <div class="date-filter-group">
-                <label>From Date</label>
-                <input type="date" id="filter-start-date">
+        <!-- ═══════════════════════════════════
+             TIER GRAPH (ELO OVER TIME)
+        ═══════════════════════════════════ -->
+        <div class="section">
+            <div class="section-title">📊 Tier Graph (ELO Rating)</div>
+            <div class="date-filter">
+                <div class="date-filter-group">
+                    <label>From Date</label>
+                    <input type="date" id="filter-start-date">
+                </div>
+                <div class="date-filter-group">
+                    <label>To Date</label>
+                    <input type="date" id="filter-end-date">
+                </div>
             </div>
-            <div class="date-filter-group">
-                <label>To Date</label>
-                <input type="date" id="filter-end-date">
-            </div>
+            <div id="tier-chart"></div>
         </div>
-        <div id="performance-chart"></div>
-    </div>
 
-    <div class="section">
-        <div class="section-title">⚔️ Head to Head</div>
-        <div class="opponent-selector">
-            <label>Select Opponent:</label>
-            <select id="opponent-select">
-                <option value="">-- Choose a player --</option>
-            </select>
+        <!-- ═══════════════════════════════════
+             PERFORMANCE OVER TIME
+        ═══════════════════════════════════ -->
+        <div class="section">
+            <div class="section-title">📈 Performance Over Time</div>
+            <div id="performance-chart"></div>
         </div>
-        <div id="h2h-content" class="loading">Select an opponent to view head-to-head stats</div>
+
+        <!-- ═══════════════════════════════════
+             HEAD TO HEAD
+        ═══════════════════════════════════ -->
+        <div class="section">
+            <div class="section-title">⚔️ Head to Head</div>
+            <div class="opponent-selector">
+                <label>Select Opponent:</label>
+                <select id="opponent-select">
+                    <option value="">-- Choose a player --</option>
+                </select>
+            </div>
+            <div id="h2h-content" class="loading">Select an opponent to view head-to-head stats</div>
+        </div>
+
+        <!-- ═══════════════════════════════════
+             MATCH HISTORY
+        ═══════════════════════════════════ -->
+        <div class="section">
+            <div class="section-title">🎮 Match History</div>
+            <div class="match-history" id="match-history"></div>
+        </div>
     </div>
 
     <script>
@@ -329,36 +946,29 @@
             "Alex": "#FFFFFF", "Koray": "#800080", "Moritz": "#FF8C00", "Furkan": "#808080"
         };
 
-        // Social media handles (you can customize these)
-        const SOCIAL_HANDLES = {
-            "Alex": "mr_woodblock",
-            "Tasso": "powerboulder",
-            "Andre": "andrecontinanza",
-            "Richi": "riichi_shi",
-            "Seiko": "seikoboulder",
-            "Moritz": "moritz_jarla",
-            "Koray": "__koray1",
-            "Pedro": "pedro_condessa11",
-            "Symeon": "xekizoglou",
-            "Furkan": "furkanmgin"
-        };
-
         let videosData = [];
+        let playerInfo = {};
         let currentPlayer = "";
         let playerPerformance = [];
+        let playerEloHistory = [];
 
         async function initProfile() {
             const urlParams = new URLSearchParams(window.location.search);
             currentPlayer = urlParams.get('player') || 'Alex';
 
+            // Load both data files
             videosData = await loadVideosData();
-            if (videosData.length === 0) return;
+            playerInfo = await loadPlayerInfo();
+            
+            if (videosData.length === 0 || Object.keys(playerInfo).length === 0) return;
 
             setupHeader();
-            calculatePlayerPerformance();
+            calculatePlayerData();
             setupDateFilters();
+            updateTierChart();
             updatePerformanceChart();
             setupOpponentSelector();
+            renderMatchHistory();
         }
 
         async function loadVideosData() {
@@ -372,39 +982,110 @@
             }
         }
 
-        function setupHeader() {
-            const playerColor = PLAYER_COLORS[currentPlayer] || "#58A6FF";
-            
-            document.getElementById('player-name').textContent = currentPlayer;
-            document.getElementById('player-name').style.color = playerColor;
-            
-            const avatar = document.getElementById('player-avatar');
-            avatar.src = `faces/${currentPlayer}.png`;
-            avatar.style.borderColor = playerColor;
-            avatar.onerror = () => {
-                avatar.style.backgroundColor = playerColor;
-                avatar.style.opacity = '0.3';
-            };
-
-            const instagramHandle = SOCIAL_HANDLES[currentPlayer] || currentPlayer.toLowerCase();
-            const socialLinks = document.getElementById('social-links');
-            socialLinks.innerHTML = `
-                <a href="https://instagram.com/${instagramHandle}" target="_blank" class="social-link">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                    </svg>
-                    @${instagramHandle}
-                </a>
-            `;
+        async function loadPlayerInfo() {
+            try {
+                const response = await fetch('player_info.json');
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return await response.json();
+            } catch (error) {
+                console.error('Error loading player info:', error);
+                return {};
+            }
         }
 
-        function calculatePlayerPerformance() {
+        function setupHeader() {
+            const playerColor = PLAYER_COLORS[currentPlayer] || "#58A6FF";
+            const info = playerInfo[currentPlayer] || { age: 25, height: 175, country: "GER" };
+            
+            document.getElementById('athlete-name').textContent = currentPlayer.toUpperCase();
+            document.getElementById('country-code').textContent = info.country;
+            
+            // Main profile photo (profiles folder)
+            const photo = document.getElementById('athlete-photo');
+            photo.src = `profiles/${currentPlayer}.png`;
+            photo.onerror = () => {
+                console.warn(`Profile photo not found: profiles/${currentPlayer}.png`);
+                photo.style.opacity = '0.3';
+                photo.style.backgroundColor = playerColor;
+            };
+
+            // Circular flag photo (flags folder with 3-letter country code)
+            const flag = document.getElementById('flag-img');
+            const flagPlaceholder = document.getElementById('flag-placeholder');
+            flag.src = `flags/${info.country}.png`;
+            
+            flag.onload = () => {
+                flag.style.display = 'block';
+                flagPlaceholder.style.display = 'none';
+                console.log(`Flag loaded: flags/${info.country}.png`);
+            };
+            
+            flag.onerror = () => {
+                console.warn(`Flag not found: flags/${info.country}.png`);
+                flag.style.display = 'none';
+                flagPlaceholder.style.display = 'block';
+                flagPlaceholder.textContent = info.country;
+            };
+
+            document.getElementById('stat-age').textContent = info.age;
+            document.getElementById('stat-height').innerHTML = `${info.height}<span class="unit">CM</span>`;
+        }
+
+        function calculateBoulderPoints(performances) {
+            const flashes = Object.values(performances).filter(p => p === "Flash").length;
+            const tops = Object.values(performances).filter(p => p === "Top").length;
+            const totalParticipants = Object.keys(performances).length;
+            const successfulAscents = flashes + tops;
+
+            let M;
+            if (flashes === 1 && tops === 0) {
+                M = 2.0;
+            } else if (successfulAscents > 0) {
+                M = 2.0 - (successfulAscents / totalParticipants);
+            } else {
+                M = 1.0;
+            }
+
+            const points = {};
+            for (const [participant, performance] of Object.entries(performances)) {
+                let basePoints = 0;
+                if (performance === "Flash") basePoints = 1.2;
+                else if (performance === "Top") basePoints = 1.0;
+                points[participant] = basePoints * M;
+            }
+
+            return points;
+        }
+
+        function calculateVideoScores(video) {
+            const boulders = video.boulders || [];
+            const totalScores = {};
+
+            for (const boulder of boulders) {
+                const boulderPoints = calculateBoulderPoints(boulder.performances || {});
+                for (const [participant, points] of Object.entries(boulderPoints)) {
+                    totalScores[participant] = (totalScores[participant] || 0) + points;
+                }
+            }
+
+            return totalScores;
+        }
+
+        function calculatePlayerData() {
+            const INITIAL_ELO = 1500;
+            const K = 16;
+            
             playerPerformance = [];
+            playerEloHistory = [];
+            
             let cumulativeFlashes = 0;
             let cumulativeTops = 0;
             let cumulativeFails = 0;
+            let elo = INITIAL_ELO;
+            
+            let videoCount = 0;
+            let firstCount = 0, secondCount = 0, thirdCount = 0;
 
-            // Sort videos by date (ascending)
             const sortedVideos = [...videosData].sort((a, b) => 
                 new Date(a.published_at) - new Date(b.published_at)
             );
@@ -413,15 +1094,74 @@
                 let videoFlashes = 0;
                 let videoTops = 0;
                 let videoFails = 0;
+                let participatedInVideo = false;
 
-                for (const boulder of video.boulders || []) {
-                    const result = boulder.performances?.[currentPlayer];
-                    if (result === "Flash") videoFlashes++;
-                    else if (result === "Top") videoTops++;
-                    else if (result === "Fail") videoFails++;
+                const videoScores = calculateVideoScores(video);
+                const sortedScores = Object.entries(videoScores).sort((a, b) => b[1] - a[1]);
+                
+                // Find player's placement
+                let placement = 0;
+                for (let i = 0; i < sortedScores.length; i++) {
+                    if (sortedScores[i][0] === currentPlayer) {
+                        placement = i + 1;
+                        break;
+                    }
                 }
 
-                if (videoFlashes > 0 || videoTops > 0 || videoFails > 0) {
+                if (placement > 0) {
+                    if (placement === 1) firstCount++;
+                    else if (placement === 2) secondCount++;
+                    else if (placement === 3) thirdCount++;
+                }
+
+                // Calculate ELO change
+                const firstPlaceScore = sortedScores.length > 0 ? sortedScores[0][1] : null;
+                const firstPlaceDraws = sortedScores.filter(([_, score]) => score === firstPlaceScore);
+                const hasFirstPlaceDraw = firstPlaceDraws.length > 1;
+
+                for (const boulder of video.boulders || []) {
+                    const performances = boulder.performances || {};
+                    const result = performances[currentPlayer];
+                    
+                    if (result) {
+                        participatedInVideo = true;
+                        if (result === "Flash") videoFlashes++;
+                        else if (result === "Top") videoTops++;
+                        else if (result === "Fail") videoFails++;
+                    }
+
+                    if (currentPlayer in performances) {
+                        const boulderScores = calculateBoulderPoints(performances);
+                        const participants = Object.keys(performances);
+
+                        for (const opponent of participants) {
+                            if (opponent === currentPlayer) continue;
+
+                            const s1 = boulderScores[currentPlayer];
+                            const s2 = boulderScores[opponent];
+
+                            const p1InFirstDraw = hasFirstPlaceDraw && firstPlaceDraws.some(([name, _]) => name === currentPlayer);
+                            const p2InFirstDraw = hasFirstPlaceDraw && firstPlaceDraws.some(([name, _]) => name === opponent);
+
+                            let S;
+                            if (p1InFirstDraw && p2InFirstDraw) {
+                                continue;
+                            } else if (s1 === s2) {
+                                continue;
+                            } else {
+                                S = s1 > s2 ? 1 : 0;
+                            }
+
+                            const eloOpponent = 1500;
+                            const E = 1 / (1 + Math.pow(10, (eloOpponent - elo) / 400));
+                            const delta = K * (S - E);
+                            elo += delta;
+                        }
+                    }
+                }
+
+                if (participatedInVideo) {
+                    videoCount++;
                     cumulativeFlashes += videoFlashes;
                     cumulativeTops += videoTops;
                     cumulativeFails += videoFails;
@@ -433,49 +1173,31 @@
                         fails: cumulativeFails,
                         video: video
                     });
+
+                    playerEloHistory.push({
+                        date: video.published_at.split('T')[0],
+                        elo: elo,
+                        video: video
+                    });
                 }
             }
 
-            updateStatsSummary();
+            updateHeaderStats(videoCount, cumulativeFlashes + cumulativeTops + cumulativeFails, 
+                            cumulativeFlashes, cumulativeTops, cumulativeFails,
+                            firstCount, secondCount, thirdCount);
         }
 
-        function updateStatsSummary() {
-            const lastPerf = playerPerformance[playerPerformance.length - 1] || 
-                { flashes: 0, tops: 0, fails: 0 };
-            
-            const totalAttempts = lastPerf.flashes + lastPerf.tops + lastPerf.fails;
-            const successRate = totalAttempts > 0 ? 
-                (((lastPerf.flashes + lastPerf.tops) / totalAttempts) * 100).toFixed(1) : 0;
-            const flashRate = totalAttempts > 0 ? 
-                ((lastPerf.flashes / totalAttempts) * 100).toFixed(1) : 0;
-
-            const summaryDiv = document.getElementById('stats-summary');
-            summaryDiv.innerHTML = `
-                <div class="stat-box">
-                    <div class="stat-label">Total Boulders</div>
-                    <div class="stat-value">${totalAttempts}</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Flashes</div>
-                    <div class="stat-value" style="color: #FFD700;">${lastPerf.flashes}</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Tops</div>
-                    <div class="stat-value" style="color: #00FF00;">${lastPerf.tops}</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Fails</div>
-                    <div class="stat-value" style="color: #FF0000;">${lastPerf.fails}</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Success Rate</div>
-                    <div class="stat-value">${successRate}%</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-label">Flash Rate</div>
-                    <div class="stat-value">${flashRate}%</div>
-                </div>
-            `;
+        function updateHeaderStats(videos, boulders, flashes, tops, fails, first, second, third) {
+            document.getElementById('stat-tops-pct').textContent = boulders > 0 ? 
+                (((flashes + tops) / boulders) * 100).toFixed(1) + '%' : '0%';
+            document.getElementById('stat-participations').textContent = videos;
+            document.getElementById('stat-boulders').textContent = boulders;
+            document.getElementById('stat-flashes').textContent = flashes;
+            document.getElementById('stat-tops').textContent = tops;
+            document.getElementById('stat-fails').textContent = fails;
+            document.getElementById('podium-1st').textContent = first;
+            document.getElementById('podium-2nd').textContent = second;
+            document.getElementById('podium-3rd').textContent = third;
         }
 
         function setupDateFilters() {
@@ -491,13 +1213,132 @@
             document.getElementById('filter-start-date').min = startDate;
             document.getElementById('filter-end-date').min = startDate;
 
-            document.getElementById('filter-start-date').addEventListener('change', updatePerformanceChart);
-            document.getElementById('filter-end-date').addEventListener('change', updatePerformanceChart);
+            document.getElementById('filter-start-date').addEventListener('change', applyDateFilter);
+            document.getElementById('filter-end-date').addEventListener('change', applyDateFilter);
         }
 
-        function updatePerformanceChart() {
+        function applyDateFilter() {
             const startDateStr = document.getElementById('filter-start-date').value;
             const endDateStr = document.getElementById('filter-end-date').value;
+            
+            // Update all sections based on date filter
+            updateTierChart(startDateStr, endDateStr);
+            updatePerformanceChart(startDateStr, endDateStr);
+            updateHeaderStatsFiltered(startDateStr, endDateStr);
+            renderMatchHistory(startDateStr, endDateStr);
+            
+            // Refresh H2H if an opponent is selected
+            const opponentSelect = document.getElementById('opponent-select');
+            if (opponentSelect.value) {
+                calculateHeadToHead(opponentSelect.value);
+            }
+        }
+
+        function updateHeaderStatsFiltered(startDate, endDate) {
+            const sortedVideos = [...videosData].sort((a, b) => 
+                new Date(a.published_at) - new Date(b.published_at)
+            );
+
+            let videos = 0;
+            let flashes = 0, tops = 0, fails = 0, boulders = 0;
+            let firstCount = 0, secondCount = 0, thirdCount = 0;
+
+            for (const video of sortedVideos) {
+                const videoDate = video.published_at.split('T')[0];
+                if (videoDate < startDate || videoDate > endDate) continue;
+
+                let participatedInVideo = false;
+                let videoFlashes = 0, videoTops = 0, videoFails = 0;
+
+                const videoScores = calculateVideoScores(video);
+                const sortedScores = Object.entries(videoScores).sort((a, b) => b[1] - a[1]);
+                
+                let placement = 0;
+                for (let i = 0; i < sortedScores.length; i++) {
+                    if (sortedScores[i][0] === currentPlayer) {
+                        placement = i + 1;
+                        break;
+                    }
+                }
+
+                if (placement > 0) {
+                    if (placement === 1) firstCount++;
+                    else if (placement === 2) secondCount++;
+                    else if (placement === 3) thirdCount++;
+                }
+
+                for (const boulder of video.boulders || []) {
+                    const result = boulder.performances?.[currentPlayer];
+                    if (result) {
+                        participatedInVideo = true;
+                        boulders++;
+                        if (result === "Flash") { videoFlashes++; flashes++; }
+                        else if (result === "Top") { videoTops++; tops++; }
+                        else if (result === "Fail") { videoFails++; fails++; }
+                    }
+                }
+
+                if (participatedInVideo) {
+                    videos++;
+                }
+            }
+
+            updateHeaderStats(videos, boulders, flashes, tops, fails, firstCount, secondCount, thirdCount);
+        }
+
+        function updateTierChart(startDate, endDate) {
+            if (playerEloHistory.length === 0) return;
+
+            const startDateStr = startDate || document.getElementById('filter-start-date')?.value || playerEloHistory[0].date;
+            const endDateStr = endDate || document.getElementById('filter-end-date')?.value || playerEloHistory[playerEloHistory.length - 1].date;
+
+            const filtered = playerEloHistory.filter(p => 
+                p.date >= startDateStr && p.date <= endDateStr
+            );
+
+            if (filtered.length === 0) return;
+
+            const dates = filtered.map(p => p.date);
+            const elos = filtered.map(p => p.elo);
+
+            const data = [{
+                x: dates,
+                y: elos,
+                type: 'scatter',
+                mode: 'lines+markers',
+                line: { color: '#d0b96a', width: 3, shape: 'spline' },
+                marker: { size: 6, color: '#d0b96a' },
+                fill: 'tozeroy',
+                fillcolor: 'rgba(208, 185, 106, 0.1)',
+                name: 'ELO Rating'
+            }];
+
+            const layout = {
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#E6EDF3', family: 'Barlow' },
+                xaxis: {
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
+                    title: '',
+                    type: 'date'
+                },
+                yaxis: {
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
+                    title: 'ELO Rating',
+                    zeroline: false,
+                    range: [1000, 2000]
+                },
+                hovermode: 'x unified',
+                margin: { t: 20, r: 20, b: 40, l: 60 }
+            };
+
+            const config = { responsive: true, displayModeBar: false };
+            Plotly.newPlot('tier-chart', data, layout, config);
+        }
+
+        function updatePerformanceChart(startDate, endDate) {
+            const startDateStr = startDate || document.getElementById('filter-start-date')?.value;
+            const endDateStr = endDate || document.getElementById('filter-end-date')?.value;
 
             const filtered = playerPerformance.filter(p => 
                 p.date >= startDateStr && p.date <= endDateStr
@@ -512,53 +1353,54 @@
 
             const data = [
                 {
-                    x: dates,
-                    y: flashes,
-                    name: 'Flashes',
-                    type: 'scatter',
-                    mode: 'lines+markers',
-                    line: { color: '#FFD700', width: 3 },
-                    marker: { size: 6 }
+                    x: dates, y: flashes, name: 'Flashes',
+                    type: 'scatter', mode: 'lines+markers',
+                    line: { color: '#FFD700', width: 4, shape: 'spline' },
+                    marker: { size: 8, symbol: 'diamond' },
+                    fill: 'tozeroy',
+                    fillcolor: 'rgba(255, 215, 0, 0.1)'
                 },
                 {
-                    x: dates,
-                    y: tops,
-                    name: 'Tops',
-                    type: 'scatter',
-                    mode: 'lines+markers',
-                    line: { color: '#00FF00', width: 3 },
-                    marker: { size: 6 }
+                    x: dates, y: tops, name: 'Tops',
+                    type: 'scatter', mode: 'lines+markers',
+                    line: { color: '#4ade80', width: 4, shape: 'spline' },
+                    marker: { size: 8, symbol: 'circle' },
+                    fill: 'tozeroy',
+                    fillcolor: 'rgba(74, 222, 128, 0.1)'
                 },
                 {
-                    x: dates,
-                    y: fails,
-                    name: 'Fails',
-                    type: 'scatter',
-                    mode: 'lines+markers',
-                    line: { color: '#FF0000', width: 3 },
-                    marker: { size: 6 }
+                    x: dates, y: fails, name: 'Fails',
+                    type: 'scatter', mode: 'lines+markers',
+                    line: { color: '#dc2626', width: 4, shape: 'spline' },
+                    marker: { size: 8, symbol: 'x' },
+                    fill: 'tozeroy',
+                    fillcolor: 'rgba(220, 38, 38, 0.05)'
                 }
             ];
 
             const layout = {
-                paper_bgcolor: '#1C1F26',
-                plot_bgcolor: '#1C1F26',
-                font: { color: '#E6EDF3', family: 'Segoe UI' },
+                paper_bgcolor: 'rgba(0,0,0,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+                font: { color: '#E6EDF3', family: 'Barlow', size: 12 },
                 xaxis: {
-                    gridcolor: '#2D333B',
-                    title: 'Date',
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
+                    title: '',
                     type: 'date'
                 },
                 yaxis: {
-                    gridcolor: '#2D333B',
-                    title: 'Cumulative Count'
+                    gridcolor: 'rgba(255, 255, 255, 0.1)',
+                    title: 'Cumulative Count',
+                    titlefont: { size: 14 }
                 },
                 legend: {
-                    x: 0.01,
-                    y: 0.99,
-                    bgcolor: 'rgba(28, 31, 38, 0.8)'
+                    x: 0.02, y: 0.98,
+                    bgcolor: 'rgba(0, 8, 18, 0.9)',
+                    bordercolor: 'rgba(255, 255, 255, 0.2)',
+                    borderwidth: 1,
+                    font: { size: 12 }
                 },
-                hovermode: 'x unified'
+                hovermode: 'x unified',
+                margin: { t: 20, r: 20, b: 40, l: 60 }
             };
 
             const config = { responsive: true, displayModeBar: false };
@@ -599,6 +1441,9 @@
         }
 
         function calculateHeadToHead(opponent) {
+            const startDateStr = document.getElementById('filter-start-date')?.value;
+            const endDateStr = document.getElementById('filter-end-date')?.value;
+            
             const INITIAL_ELO = 1500;
             const K = 16;
             
@@ -611,17 +1456,20 @@
             let duelsFound = 0;
 
             for (const video of videosData) {
+                const videoDate = video.published_at.split('T')[0];
+                if (startDateStr && endDateStr && (videoDate < startDateStr || videoDate > endDateStr)) {
+                    continue;
+                }
+
                 for (const boulder of video.boulders || []) {
                     const performances = boulder.performances || {};
                     
-                    // Check if both players participated
                     if (!(currentPlayer in performances) || !(opponent in performances)) {
                         continue;
                     }
 
                     duelsFound++;
 
-                    // Update stats
                     for (const player of [currentPlayer, opponent]) {
                         const result = performances[player];
                         stats[player].boulders++;
@@ -630,7 +1478,6 @@
                         else if (result === "Fail") stats[player].fails++;
                     }
 
-                    // Calculate ELO
                     const r1 = performances[currentPlayer];
                     const r2 = performances[opponent];
                     const s1 = r1 === "Flash" ? 2 : (r1 === "Top" ? 1 : 0);
@@ -712,28 +1559,220 @@
                         <tr>
                             <td class="player-${currentPlayer.toLowerCase()}"><b>${currentPlayer}</b></td>
                             <td>${p1Stats.boulders}</td>
-                            <td style="color: #FFD700;">${p1Stats.flashes}</td>
-                            <td style="color: #00FF00;">${p1Stats.tops}</td>
-                            <td style="color: #FF0000;">${p1Stats.fails}</td>
+                            <td class="stat-flash">${p1Stats.flashes}</td>
+                            <td class="stat-top">${p1Stats.tops}</td>
+                            <td class="stat-fail">${p1Stats.fails}</td>
                             <td>${p1SuccessRate}%</td>
-                            <td style="color: ${p1Stats.eloChange >= 0 ? '#00FF00' : '#FF0000'};">
+                            <td style="color: ${p1Stats.eloChange >= 0 ? '#4ade80' : '#dc2626'};">
                                 ${p1Stats.eloChange >= 0 ? '+' : ''}${Math.round(p1Stats.eloChange)}
                             </td>
                         </tr>
                         <tr>
                             <td class="player-${opponent.toLowerCase()}"><b>${opponent}</b></td>
                             <td>${p2Stats.boulders}</td>
-                            <td style="color: #FFD700;">${p2Stats.flashes}</td>
-                            <td style="color: #00FF00;">${p2Stats.tops}</td>
-                            <td style="color: #FF0000;">${p2Stats.fails}</td>
+                            <td class="stat-flash">${p2Stats.flashes}</td>
+                            <td class="stat-top">${p2Stats.tops}</td>
+                            <td class="stat-fail">${p2Stats.fails}</td>
                             <td>${p2SuccessRate}%</td>
-                            <td style="color: ${p2Stats.eloChange >= 0 ? '#00FF00' : '#FF0000'};">
+                            <td style="color: ${p2Stats.eloChange >= 0 ? '#4ade80' : '#dc2626'};">
                                 ${p2Stats.eloChange >= 0 ? '+' : ''}${Math.round(p2Stats.eloChange)}
                             </td>
                         </tr>
                     </tbody>
                 </table>
             `;
+        }
+
+        function renderMatchHistory(startDate, endDate) {
+            const historyDiv = document.getElementById('match-history');
+            
+            const startDateStr = startDate || document.getElementById('filter-start-date')?.value;
+            const endDateStr = endDate || document.getElementById('filter-end-date')?.value;
+            
+            const sortedVideos = [...videosData].sort((a, b) => 
+                new Date(b.published_at) - new Date(a.published_at)
+            );
+
+            // Calculate ELO for each video to get deltas
+            const INITIAL_ELO = 1500;
+            const K = 16;
+            let currentElo = INITIAL_ELO;
+            const videoEloChanges = new Map();
+
+            // Process videos chronologically to calculate ELO changes
+            const chronologicalVideos = [...videosData].sort((a, b) => 
+                new Date(a.published_at) - new Date(b.published_at)
+            );
+
+            for (const video of chronologicalVideos) {
+                const videoDate = video.published_at.split('T')[0];
+                if (videoDate < startDateStr || videoDate > endDateStr) continue;
+
+                let participatedInVideo = false;
+                let eloBeforeVideo = currentElo;
+                
+                const videoScores = calculateVideoScores(video);
+                const sortedScores = Object.entries(videoScores).sort((a, b) => b[1] - a[1]);
+                
+                const firstPlaceScore = sortedScores.length > 0 ? sortedScores[0][1] : null;
+                const firstPlaceDraws = sortedScores.filter(([_, score]) => score === firstPlaceScore);
+                const hasFirstPlaceDraw = firstPlaceDraws.length > 1;
+
+                for (const boulder of video.boulders || []) {
+                    const performances = boulder.performances || {};
+                    
+                    if (currentPlayer in performances) {
+                        participatedInVideo = true;
+                        const boulderScores = calculateBoulderPoints(performances);
+                        const participants = Object.keys(performances);
+
+                        for (const opponent of participants) {
+                            if (opponent === currentPlayer) continue;
+
+                            const s1 = boulderScores[currentPlayer];
+                            const s2 = boulderScores[opponent];
+
+                            const p1InFirstDraw = hasFirstPlaceDraw && firstPlaceDraws.some(([name, _]) => name === currentPlayer);
+                            const p2InFirstDraw = hasFirstPlaceDraw && firstPlaceDraws.some(([name, _]) => name === opponent);
+
+                            let S;
+                            if (p1InFirstDraw && p2InFirstDraw) {
+                                continue;
+                            } else if (s1 === s2) {
+                                continue;
+                            } else {
+                                S = s1 > s2 ? 1 : 0;
+                            }
+
+                            const eloOpponent = 1500;
+                            const E = 1 / (1 + Math.pow(10, (eloOpponent - currentElo) / 400));
+                            const delta = K * (S - E);
+                            currentElo += delta;
+                        }
+                    }
+                }
+
+                if (participatedInVideo) {
+                    const eloChange = currentElo - eloBeforeVideo;
+                    videoEloChanges.set(video.video_id, {
+                        change: eloChange,
+                        before: eloBeforeVideo,
+                        after: currentElo
+                    });
+                }
+            }
+
+            let matchesHTML = '';
+
+            for (const video of sortedVideos) {
+                const videoDate = video.published_at.split('T')[0];
+                if (videoDate < startDateStr || videoDate > endDateStr) continue;
+
+                const videoScores = calculateVideoScores(video);
+                const sortedScores = Object.entries(videoScores).sort((a, b) => b[1] - a[1]);
+                
+                let placement = 0;
+                let playerFlash = 0, playerTop = 0, playerFail = 0;
+
+                for (let i = 0; i < sortedScores.length; i++) {
+                    if (sortedScores[i][0] === currentPlayer) {
+                        placement = i + 1;
+                        break;
+                    }
+                }
+
+                if (placement === 0) continue;
+
+                for (const boulder of video.boulders || []) {
+                    const result = boulder.performances?.[currentPlayer];
+                    if (result === "Flash") playerFlash++;
+                    else if (result === "Top") playerTop++;
+                    else if (result === "Fail") playerFail++;
+                }
+
+                let matchClass = 'match-loss';
+                let placementText = placement + 'TH';
+                if (placement === 1) {
+                    matchClass = 'match-win';
+                    placementText = '1ST';
+                } else if (placement === 2) {
+                    matchClass = 'match-second';
+                    placementText = '2ND';
+                } else if (placement === 3) {
+                    matchClass = 'match-third';
+                    placementText = '3RD';
+                }
+
+                const participants = Object.keys(videoScores).filter(p => p !== currentPlayer);
+                const date = new Date(video.published_at);
+                const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+
+                // Get ELO change for this video
+                const eloData = videoEloChanges.get(video.video_id);
+                const eloChange = eloData ? eloData.change : 0;
+                const eloChangeClass = eloChange >= 0 ? 'stat-elo-gain' : 'stat-elo-loss';
+                const eloChangeText = eloChange >= 0 ? `+${Math.round(eloChange)}` : Math.round(eloChange);
+
+                // Video thumbnail and YouTube link
+                const thumbnailUrl = `thumbnails/${video.video_id}.jpg`;
+                const youtubeUrl = `https://www.youtube.com/watch?v=${video.video_id}`;
+
+                matchesHTML += `
+                    <div class="match-card ${matchClass}">
+                        <a href="${youtubeUrl}" target="_blank">
+                            <img src="${thumbnailUrl}" 
+                                 class="match-thumbnail" 
+                                 alt="Video thumbnail"
+                                 onerror="this.style.display='none';">
+                        </a>
+                        <div class="match-placement">
+                            <div class="placement-badge">${placementText}</div>
+                            <div class="placement-label">Place</div>
+                        </div>
+                        <div class="match-date">
+                            <div class="match-date-value">${formattedDate}</div>
+                            <div class="match-date-label">${date.getFullYear()}</div>
+                        </div>
+                        <div class="match-details">
+                            <div class="match-title">${video.title}</div>
+                            <div class="match-participants">
+                                ${participants.slice(0, 4).map(p => 
+                                    `<span class="participant-badge player-${p.toLowerCase()}">${p}</span>`
+                                ).join('')}
+                                ${participants.length > 4 ? `<span class="participant-badge">+${participants.length - 4}</span>` : ''}
+                            </div>
+                        </div>
+                        <div class="match-stats">
+                            <div class="match-stat">
+                                <div class="match-stat-label">Flash</div>
+                                <div class="match-stat-value stat-flash">${playerFlash}</div>
+                            </div>
+                            <div class="match-stat">
+                                <div class="match-stat-label">Top</div>
+                                <div class="match-stat-value stat-top">${playerTop}</div>
+                            </div>
+                            <div class="match-stat">
+                                <div class="match-stat-label">Fail</div>
+                                <div class="match-stat-value stat-fail">${playerFail}</div>
+                            </div>
+                            <div class="match-stat">
+                                <div class="match-stat-label">Score</div>
+                                <div class="match-stat-value stat-score">${videoScores[currentPlayer].toFixed(1)}</div>
+                            </div>
+                            <div class="match-stat">
+                                <div class="match-stat-label">ELO</div>
+                                <div class="match-stat-value ${eloChangeClass}">${eloChangeText}</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            if (matchesHTML === '') {
+                historyDiv.innerHTML = '<div class="no-duel-message">No matches found in selected date range</div>';
+            } else {
+                historyDiv.innerHTML = matchesHTML;
+            }
         }
 
         window.addEventListener('DOMContentLoaded', initProfile);
